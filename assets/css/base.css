@@ -1,0 +1,34 @@
+:root{
+    --white-color: #fff;
+    --back-color: #000;
+    --text-color: #333;
+}
+*{
+    box-sizing: inherit; /* để cho các thẻ kế thừa lại box-sizing trong thẻ html */
+}
+html{
+    font-size: 62.5%;  /* => HACK: 1rem = 10px */
+    line-height: 1.6rem ; /* ~16px = 16/10 = 1.6rem  */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+ /*---------------Mục này chuẩn bị để sau này sẽ cho Responsie ----------------*/
+.grid{
+    width: 1200px;
+    max-width: 100%; 
+    /* ý nghĩa: Với màn hình kích cỡ > 1200 thì width sẽ là 1200px còn với màn hình cỡ nhỏ hơn thì sẽ lấy bằng với kích cỡ màn hình  */
+    margin: 0 auto; /* Tự căn giữa cho các thẻ */
+
+}
+
+.grid__full-width{
+    width: 100%; /* Khi không muốn sử dụng width 1200px thì thêm class này vào thẻ */
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap; 
+    /* ý nghĩa: những thẻ nằm trong class .grid__row thì sẽ nằm ngang và vượt quá chiều ngang thì xuống dòng */
+}
+
+
+
