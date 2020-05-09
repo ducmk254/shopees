@@ -5,4 +5,5 @@ Bước 3: build base css: tạo biến màu , tạo font-size , line-height, đ
 Bước 4: Dựng khung webste: phân tích bố cục website và lên html cơ bản
 Bước 5: Nhúng font icon
 Bước 6: icon css
-Bước 7: 
+Bước 7: header QR code CSS
+Bước 8:
