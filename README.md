@@ -13,4 +13,5 @@ Bước 11: Header notification - P3
 Bước 12: Header notification - P4
 Bước 13: Base Modal
 Bước 14: Dựng form đăng ký
-Bước 15: 
+Bước 15: CSS form đăng ký
+Bước 16: 

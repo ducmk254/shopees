@@ -3,6 +3,7 @@
     --back-color: #000;
     --text-color: #333;
     --primary-color: rgba(235, 77, 46, 1);
+    --border-color: #dbdbdb
 }
 *{
     box-sizing: inherit; /* để cho các thẻ kế thừa lại box-sizing trong thẻ html */
@@ -96,4 +97,35 @@ html{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+
+/* Buttun style */
+.btn{
+    background-color: var(--white-color);
+    min-width: 142px;
+    height: 34px;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    font-size: 1.3rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.btn:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+.btn.btn--primary{ /* chọn thẻ nào có cả 2 class này*/
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.btn.btn--disabled{
+    color: #ccc;
+    background-color: #ccc;
 }
