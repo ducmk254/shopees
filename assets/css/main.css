@@ -138,8 +138,19 @@
     right: 0;
     border: 1px solid #d3d3d3;
     transform-origin: 90% 0%; /* x = 90% y = 0%  */
-    animation: headerNotifyGrowth 0.26s;
+    -webkit-transform-origin: 90% 0%;
+    -moz-transform-origin: 90% 0%;
+    -o-transform-origin: 90% 0%;
+    -ms-zoom-transform-origin: 90% 0%;
+
+    animation: headerNotifyGrowth 0.26s;    
     -webkit-animation: headerNotifyGrowth 0.26s;
+    -moz-animation: headerNotifyGrowth 0.26s;
+    -o-animation: headerNotifyGrowth 0.26s;
+    -ms-zoom-animation: headerNotifyGrowth 0.26s;
+
+    will-change: opacity transform; /*  Tối ưu chuyển động opacity và transform */
+
     display: none;
 }
 .header__notify::before{
@@ -161,23 +172,7 @@
     top: -10px;
     right: 0;
 }
-@keyframes headerNotifyGrowth{
-    from{
-        opacity: 0;
-        transform: scale(0);
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
-}
-    to{
-        opacity: 1;
-        transform: scale(1);
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-}
+
 }
 
 .header__notify-header{

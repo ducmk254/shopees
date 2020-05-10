@@ -10,4 +10,5 @@ Bước  8: Thông báo ( chuông )
 Bước  9: Header notification - P1
 Bước 10: Header notification - P2
 Bước 11: Header notification - P3
-Bước 12: 
+Bước 12: Header notification - P4
+Bước 13: 
