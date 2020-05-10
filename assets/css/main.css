@@ -50,6 +50,12 @@
     transform: translateY(-50%);
 }
 
+
+.header__navbar-item--has-hover:hover .header__notify{
+    display: block;
+}
+
+
 .header__navbar-icon-link{
     text-decoration: none;
     color: var(--white-color);
@@ -131,6 +137,32 @@
     background-color: var(--white-color);
     right: 0;
     border: 1px solid #d3d3d3;
+    display: none;
+
+    transform-origin: 90% 0%; /* x = 90% y = 0%  */
+    animation: headerNotifyGrowth 0.26s;
+    -webkit-animation: headerNotifyGrowth 0.26s;
+    
+}
+
+
+@keyframes headerNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+}
+    to{
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
 }
 
 .header__notify-header{
@@ -144,6 +176,9 @@
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 40px;
+    cursor: default;
+    user-select: none; /* không cho user select */
+    -webkit-user-select: none;
 }
 
 .header__notify-list{
@@ -168,6 +203,7 @@
     background-color: rgba(235, 77, 46, 0.015);
 }
 
+
 .header__notify-img{
     width: 48px;
     object-fit: contain; /* để chiều cao của ảnh không chiếm hết chiều cao của thẻ cha , nó tự căn tỉ lệ của ảnh */
@@ -183,12 +219,14 @@
     
 }
 .header__notify-name{
-    color: #756f6e;
+    color: rgba(0, 0, 0, 0.914);
     font-size: 1.4rem;
-    font-weight: 500; /* cho chữ đậm nét lên chút */
+    font-weight: 400; /* cho chữ đậm nét lên chút */
+    line-height: 1.6rem;
 }
 .header__notify-description{
     font-size: 1.2rem;
+    margin-top: 5px;
 }
 .header__notify-footer{
     justify-self: center;
@@ -202,5 +240,6 @@
 }
 .header__notify-footer-btn{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
