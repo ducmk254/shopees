@@ -68,6 +68,23 @@ html{
         -o-transform: scale(1);
 }
 }
+@-webkit-keyframes growth{
+    from {
+        transform: scale(var(--growth-from));
+        -webkit-transform: scale(var(--growth-from));
+        -moz-transform: scale(var(--growth-from));
+        -ms-transform: scale(var(--growth-from));
+        -o-transform: scale(var(--growth-from));
+}
+    to {
+        transform: scale(var(--growth-to));
+        -webkit-transform: scale(var(--growth-to));
+        -moz-transform: scale(var(--growth-to));
+        -ms-transform: scale(var(--growth-to));
+        -o-transform: scale(var(--growth-to));
+}
+}
+
 
 
 /* modal  */
@@ -80,16 +97,20 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeIn linear 0.3s;
+    -webkit-animation: fadeIn linear 0.3s;
 }
 .modal__overlay{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
 
 }
 
 .modal__body{
+    --growth-form: 0.1;
+    --grow-to: 1;
     background-color:var(--white-color);
     z-index: 10;
     border-radius: 5px;
@@ -97,6 +118,8 @@ html{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    animation: growth linear 0.3s;
+    -webkit-animation: growth linear 0.3s;
 }
 
 
