@@ -2,6 +2,7 @@
     --white-color: #fff;
     --back-color: #000;
     --text-color: #333;
+    --primary-color: rgba(235, 77, 46, 1);
 }
 *{
     box-sizing: inherit; /* để cho các thẻ kế thừa lại box-sizing trong thẻ html */

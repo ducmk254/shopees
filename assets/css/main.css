@@ -15,6 +15,7 @@
 .header__navbar-item{
     margin: 0 8px;
     min-height: 26px;
+    position: relative;
 }
 .header__navbar-item,
 .header__navbar-item-link{
@@ -119,4 +120,87 @@
     opacity: 1;
     display: block;
     
+}
+
+/* ------ header notification ------*/
+.header__notify{
+    position: absolute;
+    width: 404px;
+    height: auto;
+    top: 118%;
+    background-color: var(--white-color);
+    right: 0;
+    border: 1px solid #d3d3d3;
+}
+
+.header__notify-header{
+    height: 40px;
+    background-color: var(--white-color);
+
+}
+.header__notify-header h3{
+    color: rgb(185, 185, 185);
+    margin: 0  0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.header__notify-list{
+    padding-left: 0;
+    list-style: none;
+}
+.header__notify-item{
+    padding: 10px 0px;
+    background-color: rgba(235, 77, 46, 0.09);
+}
+.header__notify-item--viewed{
+    background-color: rgba(235, 77, 46, 0.015);
+}
+.header__notify-link{
+    width: 100%;
+    display: flex;
+    margin: 0 0 0 12px;
+    text-decoration: none;
+    
+}
+.header__notify-item:hover{
+    background-color: rgba(235, 77, 46, 0.015);
+}
+
+.header__notify-img{
+    width: 48px;
+    object-fit: contain; /* để chiều cao của ảnh không chiếm hết chiều cao của thẻ cha , nó tự căn tỉ lệ của ảnh */
+    align-self: flex-start;
+    justify-self: center;
+}
+.header__notify-info{
+    margin-left: 12px;
+    align-self: flex-start;
+}
+.header__notify-info span{
+    display: block;
+    
+}
+.header__notify-name{
+    color: #756f6e;
+    font-size: 1.4rem;
+    font-weight: 500; /* cho chữ đậm nét lên chút */
+}
+.header__notify-description{
+    font-size: 1.2rem;
+}
+.header__notify-footer{
+    justify-self: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 6px 0px;
+
+}
+.header__notify-footer:hover{
+    background-color: rgba(236, 229, 229,0.1);
+}
+.header__notify-footer-btn{
+    text-decoration: none;
+    font-size: 1.5rem;
 }
