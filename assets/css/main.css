@@ -370,3 +370,27 @@
     background-color: var(--white-color);
     
 }
+
+
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+}
+.auth-form__help-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 0px;
+    color: #939393;
+}
+.auth-form__help-sperate{
+    display: block;
+    border-left: 1px solid #eaeaea;
+    height: 20px;
+    margin: 0px 16px;
+}
+.auth-form__help-forgot{
+    color: var(--primary-color);
+}
