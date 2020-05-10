@@ -133,19 +133,34 @@
     position: absolute;
     width: 404px;
     height: auto;
-    top: 118%;
+    top: calc(118% + 5px);
     background-color: var(--white-color);
     right: 0;
     border: 1px solid #d3d3d3;
-    display: none;
-
     transform-origin: 90% 0%; /* x = 90% y = 0%  */
     animation: headerNotifyGrowth 0.26s;
     -webkit-animation: headerNotifyGrowth 0.26s;
-    
+    display: none;
 }
-
-
+.header__notify::before{
+    content: '';
+    display: block;
+    border-width: 10px 15px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+}
+.header__notify::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 16px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
 @keyframes headerNotifyGrowth{
     from{
         opacity: 0;

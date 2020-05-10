@@ -8,4 +8,6 @@ Bước  6: icon css
 Bước  7: header QR code CSS
 Bước  8: Thông báo ( chuông )
 Bước  9: Header notification - P1
-Bước 10: 
+Bước 10: Header notification - P2
+Bước 11: Header notification - P3
+Bước 12: 
