@@ -16,4 +16,5 @@ Bước 14: Dựng form đăng ký
 Bước 15: CSS form đăng ký
 Bước 16: CSS form đăng nhập
 Bước 17: Modal animation
-Bước 18: 
+Bước 18: Build base search
+Bước 19: 

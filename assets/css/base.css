@@ -3,7 +3,9 @@
     --back-color: #000;
     --text-color: #333;
     --primary-color: rgba(235, 77, 46, 1);
-    --border-color: #dbdbdb
+    --border-color: #dbdbdb;
+    --navbar-height: 34px;
+    --header-height: 120px;
 }
 *{
     box-sizing: inherit; /* để cho các thẻ kế thừa lại box-sizing trong thẻ html */
